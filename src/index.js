@@ -1,8 +1,8 @@
 const express = require("express");
 const nodemailer = require("./NodeMailer/backendmailer");
+const PORT = process.env.PORT || 8080;
 
 const app = express();
-const PORT = process.env.PORT || 8080;
 app.use(express.json());
 app.use("/", nodemailer);
 
