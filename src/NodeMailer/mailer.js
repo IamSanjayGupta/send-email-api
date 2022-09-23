@@ -6,7 +6,9 @@ const express = require("express");
 const app = express.Router();
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send(
+    "Hello, welcome to email sending library. Refer the documentation at https://github.com/IamSanjayGupta/send-email-api.git on how to use  "
+  );
 });
 
 app.post("/", (req, res) => {
@@ -27,15 +29,3 @@ app.post("/", (req, res) => {
 });
 
 module.exports = app;
-
-// return process.exit(1);
-// Preview only available when sending through an Ethereal account
-// console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-
-// let message = {
-//   from: "Sanjay Gupta <sanjay.g.258@gmail.com>",
-//   to: "Sanjay Gupta <sanjayg.8237@gmail.com>",
-//   subject: "Nodemailer is unicode friendly ✔",
-//   text: "Hello to myself!",
-//   html: "<p><b>Hello</b> to myself!</p>",
-// };
