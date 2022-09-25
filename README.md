@@ -1,5 +1,4 @@
 ## What is this repo?
-
     This is simple rest api for sending email from client devices by making post request using gmail service.
 
 ## How to use ?
